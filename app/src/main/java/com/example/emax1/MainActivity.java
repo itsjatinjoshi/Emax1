@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
- public void onClick(View v) {
+            public void onClick(View v) {
                 if(etName.getText().toString().isEmpty()) {
                     Toast.makeText(MainActivity.this, "Please enter Name", Toast.LENGTH_LONG).show();
                 }
@@ -95,10 +95,10 @@ public class MainActivity extends AppCompatActivity {
                     String result="Data save";
                     tvResult.setText(result);
                     tvResult.setVisibility(View.VISIBLE);
-                }
 
 
-                Snackbar snack= Snackbar.make(findViewById(R.id.conLayout),etName+ "Thank You", Snackbar.LENGTH_LONG).setAction("Undo", new View.OnClickListener() {
+
+                Snackbar snack= Snackbar.make(findViewById(R.id.conLayout), "Thank You", Snackbar.LENGTH_LONG).setAction("Undo", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
                 });
                 snack.show();
             }
-
+            }
         });
 
         Button btnlogout = (Button) findViewById(R.id.btnExit);
