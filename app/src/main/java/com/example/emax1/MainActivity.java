@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
 
-                    String result="Data save";
+                    String result="Thank You" +etName+ "Data save";
                     tvResult.setText(result);
                     tvResult.setVisibility(View.VISIBLE);
 
@@ -103,6 +103,10 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
 
                         Toast.makeText(MainActivity.this, "Reset", Toast.LENGTH_LONG).show();
+                       etName.setText(" ");
+                        etLast.setText(" ");
+                        etPass.setText(" ");
+                        etEmail.setText(" ");
                     }
                 });
                 snack.show();
