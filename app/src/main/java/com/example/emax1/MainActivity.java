@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
 
-                    String result="Thank You" +etName+ "Data save";
-                    tvResult.setText(result);
+                    String result="Thank You Data save";
+                    tvResult.setText(result );
                     tvResult.setVisibility(View.VISIBLE);
 
 
